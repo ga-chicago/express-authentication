@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ga-chicago/express-reference#readme",
   "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
     "mongoose": "^4.5.3"

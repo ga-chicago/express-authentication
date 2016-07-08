@@ -5,9 +5,10 @@
 
 // Require dependencies
 // --------------------
-var express = require('express'),
-    app     = express(),
-    exphbs  = require('express-handlebars');
+var express     = require('express'),
+    app         = express(),
+    exphbs      = require('express-handlebars'),
+    bodyParser  = require('body-parser');
 
 
 // Configuration
@@ -20,6 +21,7 @@ app.engine('hbs', exphbs({
 }));
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
+app.use(bodyParser.urlencoded({extended: true}))
 
 // Connect to database
 // -------------------
